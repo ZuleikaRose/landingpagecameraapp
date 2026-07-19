@@ -324,7 +324,7 @@
     </div>
     <section id="section-newsletter" class="bg-secondary">
         <div class="container">
-            <form class="py-5 text-white">
+            <form class="py-5 text-white" id="newsletter-form" novalidate>
                 <h2 class="text-center">Sign-up for our newsletter</h2>
                 <p>Receive the latest news and offers by signing up to our newsletter.</p>
                 <div class="row">
@@ -351,6 +351,7 @@
                     <small class="form-text">You can unsubcribe from the mailing list at any time.</small>
                     <button type="submit" class="btn btn-dark">Sign up</button>
                 </div>
+                <p id="newsletter-status" class="mt-3" role="status" aria-live="polite"></p>
             </form>
             <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">>
                 <div class="modal-dialog modal-lg" role="document">
@@ -529,11 +530,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.min.js" integrity="sha256-MMt0/21G3z0Zg4ET1kI3HC9npItDowkitRDVr0FhCxA="
         crossorigin="anonymous"></script>
 
-    <script type="text/javascript">
-        $(function () {
-            var scroll = new SmoothScroll('a[href*="#section-"]');
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
